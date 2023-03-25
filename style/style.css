@@ -167,12 +167,13 @@ img {
     padding: 20px;
     background-color: #e5e7eb;
     color: #1f2937;
+    flex-wrap: wrap;
 }
 
 .quote {
     display: flex;
-    flex-direction: column;
-    text-align: end;
+    flex-shrink: 1;
+    text-align: left;
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
@@ -182,9 +183,53 @@ img {
 .testimonial {
     font-weight: bold;
     font-size: 26px;
+    text-align: right;
 }
 
 .four {
     display: flex;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    padding: 40px;
+    gap: 20px;
+}
+
+.cta {
+    background-color: #3882f6 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    height: fit-content;
+    width: 800px;
+    padding: 30px 80px;
+
+}
+
+.cta-button {
+    display: flex;
+    background-color: #3882f6;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    border-color: #e5e7eb;
+}
+
+.cta-headline {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
